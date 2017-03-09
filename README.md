@@ -2,54 +2,41 @@
 Chat for Eltech university students 
 
 
-## Сервер API
-### Сообщения с сервера 
+## Server API
+### Responses
 
-Простое сообщение: 
+Message from user: 
 ```JSON
-
 {"flag":"message", "messageId":0, "name":"megalok", "message":"text"}
 ```
 
-Пользователь зашёл удачно:
-
+Login successfully:
 ```JSON
-
 {"flag":"loginSuccess"}
 ```
 
-Пользователь не смог зайти из-за ника:
-
+Login failure because of nickname:
 ```JSON
-
 {"flag":"loginFailureNickname"}
 ```
 
-Пользователь не смог зайти ошибка сервера:
-
+Login failure because of server internal error:
 ```JSON
-
 {"flag":"loginServerFailure"}
 ```
 
-Другой пользователь зашёл:
-
+Another user login:
 ```JSON
-
 {"flag":"newUserConnect", "name":"Komdosh", "online":1}
 ```
 
-Другой пользователь вышел:
-
+Another user logout:
 ```JSON
-
 {"flag":"userDisconnect", "name":"Komdosh", "online":2}
 ```
 
-### Сообщения на сервер 
-Простое сообщение: 
-
+### Request
+Message: 
 ```JSON
-
 {"flag":"message", "name":"megalok",  "message":"text"} 
 ```
