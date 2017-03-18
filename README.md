@@ -1,6 +1,8 @@
 # AndroidEltechatApp
 Chat for Eltech university students 
 
+## Server for this app
+https://github.com/Lmglk/Eltechat
 
 ## Server API
 ### Responses
